@@ -1,0 +1,20 @@
+{
+  "accuracy": 0.3921527777777778,
+  "macro_f1": 0.35973332247003353,
+  "training_seconds": 604.3676773000007,
+  "parameters": 53224,
+  "model_file_mb": 0.21349048614501953,
+  "single_sample_latency_ms": 0.4236670000000231,
+  "device": "cpu",
+  "best_epoch": 28,
+  "classes": [
+    "16PSK",
+    "16QAM",
+    "256QAM",
+    "32PSK",
+    "64QAM",
+    "8PSK",
+    "BPSK",
+    "QPSK"
+  ]
+}

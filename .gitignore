@@ -1,0 +1,38 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# Environments
+.env
+.venv
+env/
+venv/
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# ==========================================
+# GitHub File Size Limit Rules (> 100 MB)
+# ==========================================
+# 1. Classical ML Random Forest model is ~953 MB (Exceeds GitHub 100 MB hard limit).
+# Host on Google Drive / GitHub Releases and link in README.md.
+ML/rf_model.pkl
+*.pkl.gz
+
+# 2. Large Raw Baseband & Feature Datasets (> 100 MB)
+# A representative test subset (assets/sample_test_iq.npz) is tracked for immediate dashboard usage.
+features_train/
+*.zip
+
+# 3. Binary Executables
+cloudflared.exe
+*.exe
+
+# 4. Scratch & Build Artifacts
+scratch/
+scratch_*
+extracted_media/
+test_slide.pptx
+emerging_project-main/

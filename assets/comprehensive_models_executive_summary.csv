@@ -1,0 +1,12 @@
+Metric,Random Forest,3-Layer MLP,1D CNN
+Model Tier & Paradigm,Tier 1: Ensemble Trees,Tier 2: Dense Neural Net,Tier 3: 1D Deep ConvNet
+Input Modality,18 Handcrafted Features,18 Standardized Features,"Raw Baseband I/Q [2, 128]"
+Model Complexity / Size,"~1,000 MB (100 Deep Trees)","0.05 MB (11,592 params)","0.21 MB (53,224 params)"
+Single-Burst Latency (B=1),~280 us,~36 us,~480 us
+Batched Latency (us/sample),177.8 us,55.8 us (0.71 us @ B=1000),58.3 us
+Overall Test Accuracy (%),33.83%,35.17%,44.00%
+Overall Macro-F1 (%),33.17%,33.90%,39.62%
+Low SNR (-4 dB) Accuracy,27.50%,22.50%,23.96%
+Mid SNR (+4 dB) Accuracy,35.00%,42.50%,45.42%
+High SNR (+14 dB) Accuracy,47.50%,52.50%,53.12%
+Hardware / Embedded Feasibility,Low (1GB Memory constraint),Highest (Ultrafast linear MACs),High (FPGA Conv1D streaming)
